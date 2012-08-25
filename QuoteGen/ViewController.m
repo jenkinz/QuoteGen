@@ -81,7 +81,12 @@
             int randIdxMovie = (arc4random() % numMovieQuotes);
         
             NSString *movieQuote = [[filteredArr objectAtIndex:randIdxMovie] valueForKey:@"quote"];
-        
+            NSString *source = [[filteredArr objectAtIndex:randIdxMovie] valueForKey:@"source"];
+            
+            if (![source length] == 0) {
+                movieQuote = [NSString stringWithFormat:@"%@\n\n(%@)", movieQuote, source];
+            }
+            
             self.quote_text.text = [NSString stringWithFormat:@"Random %@ Movie Quote:\n\n%@", selCat, movieQuote];
         }
         else {
