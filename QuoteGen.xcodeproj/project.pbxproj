@@ -38,6 +38,7 @@
 		D57422A115E957CC00926CA9 /* SMNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMNote.h; sourceTree = "<group>"; };
 		D57422A215E957CC00926CA9 /* SMNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMNote.m; sourceTree = "<group>"; };
 		D57422A415E957F200926CA9 /* Quotes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Quotes.plist; sourceTree = "<group>"; };
+		D596079D15EA850A0093A6F4 /* QuoteGen.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = QuoteGen.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +85,7 @@
 		D574228715E94AE800926CA9 /* QuoteGen */ = {
 			isa = PBXGroup;
 			children = (
+				D596079D15EA850A0093A6F4 /* QuoteGen.entitlements */,
 				D574229015E94AE800926CA9 /* AppDelegate.h */,
 				D574229115E94AE800926CA9 /* AppDelegate.m */,
 				D574229315E94AE800926CA9 /* ViewController.h */,
@@ -307,6 +309,7 @@
 				D57422A015E94AE800926CA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
