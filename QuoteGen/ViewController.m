@@ -58,12 +58,16 @@
 {
     if (self.quote_opt.selectedSegmentIndex == 2) {
         // Random "My" quote
-        int numQuotes = [self.myQuotes count],
-            randIdx = (arc4random() % numQuotes);
+        int numQuotes = [self.myQuotes count];
 
-        NSString *myQuote = [self.myQuotes objectAtIndex:randIdx];
+        NSString *allMyQuotes = @"";
         
-        self.quote_text.text = [NSString stringWithFormat:@"Random \"My\" Quote:\n\n%@", myQuote];
+        for (int i=0; i<numQuotes; i++) {
+            NSString *myQuote = [self.myQuotes objectAtIndex:i];
+            allMyQuotes = [NSString stringWithFormat:@"%@\n%@\n", allMyQuotes, myQuote];
+        }
+        
+        self.quote_text.text = [NSString stringWithFormat:@"All \"My\" Quotes:\n\n%@", allMyQuotes];
     }
     else {
         // Movie Quote
